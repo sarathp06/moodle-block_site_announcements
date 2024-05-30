@@ -1,0 +1,53 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template block_block_site_announcements/content
+
+    This template renders the main content area for the site_announcements block.
+
+    Classes required for JS:
+    * mySlides - Used to identify each slide in the slideshow.
+
+    Context variables required for this template:
+    * messages (array of formatted announcement strings)
+    * no_announcements (string) - This variable is used when there are no announcements to display.
+
+    Example context (json):
+    {
+        "messages": [
+            "<p>First announcement</p>",
+            "<p>Second announcement</p>",
+            "<p>Third announcement</p>"
+    ],
+    "no_announcements": "No announcements at this time."
+    }
+}}
+{{#no_announcements}}
+<div class="alert alert-warning" role="alert">
+<p>{{no_announcements}}</p>
+</div>
+{{/no_announcements}}
+{{^no_announcements}}
+{{#messages}}
+<div class="mySlides">
+<div class="text">{{{.}}}</div>
+</div>
+{{/messages}}
+{{/no_announcements}}
+{{#js}}
+require(['block_site_announcements/slideshow'], function(slideshow) {slideshow.init();});
+{{/js}}

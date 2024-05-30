@@ -1,0 +1,9 @@
+.block_site_announcements {
+    position: relative;
+}
+
+.block_site_announcements .mySlides {
+    display: none;
+    padding: 0px;
+    text-align: left;
+}
