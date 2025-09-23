@@ -26,7 +26,6 @@
  * Block definition class for the block_site_announcements plugin.
  */
 class block_site_announcements extends block_base {
-
     /**
      * Initialises the block.
      *

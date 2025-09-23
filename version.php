@@ -24,8 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2025092303;
-$plugin->release = '1.0.3';
+$plugin->version = 2025092304;
+$plugin->release = '1.0.4';
 $plugin->requires = 2022111800;
 $plugin->component = 'block_site_announcements';
 $plugin->maturity = MATURITY_STABLE;

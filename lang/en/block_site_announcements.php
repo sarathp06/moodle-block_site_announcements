@@ -31,5 +31,3 @@ $string['privacy:metadata'] = 'The Site Announcements block displays existing an
 $string['site_announcements'] = 'Site announcements block';
 $string['site_announcements:addinstance'] = 'Add a new site announcements block';
 $string['site_announcements:myaddinstance'] = 'Add a new site announcements block to the My Moodle page';
-
-
