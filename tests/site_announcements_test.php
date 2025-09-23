@@ -13,6 +13,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 namespace block_site_announcements;
 use block_site_announcements;
 
@@ -31,6 +32,7 @@ use block_site_announcements;
  */
 final class site_announcements_test extends \advanced_testcase {
     public static function setUpBeforeClass(): void {
+        parent::setUpBeforeClass();
         require_once(__DIR__ . '/../../moodleblock.class.php');
         require_once(__DIR__ . '/../block_site_announcements.php');
     }

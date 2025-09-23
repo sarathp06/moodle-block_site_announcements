@@ -36,7 +36,8 @@ if ($ADMIN->fulltree) {
     $settings->add(new admin_setting_confightmleditor(
         'block_site_announcements/announcement2',
         get_string('announcement_two', 'block_site_announcements'),
-        '', ''
+        '',
+        ''
     ));
     // Announcement three.
     $settings->add(new admin_setting_confightmleditor(
@@ -46,4 +47,3 @@ if ($ADMIN->fulltree) {
         ''
     ));
 }
-
